@@ -4,6 +4,10 @@
 apply from:'scala-common.gradle'
 
 dependencies{
-  testCompile "org.scala-tools.testing:scalatest:0.9.5"
+  testCompile "org.scalatest:scalatest:1.0"
   testCompile "junit:junit:4.8.1"
+}
+
+repositories{
+  mavenRepo urls:'http://scala-tools.org/repo-releases'
 }

@@ -1,7 +1,7 @@
 package pld
 
 
-import org.junit.Assert._
+import org.scalatest.junit.AssertionsForJUnit._
 import org.junit.Test
 import org.junit.Before
 import org.hamcrest.CoreMatchers._
@@ -20,7 +20,8 @@ class SimpleTest {
 
   @Test
   def verifySum() {
-    assertThat(adder.add(2, 3), equalTo(5))
+//    assertThat(adder.add(2, 3), equalTo(5))
+    assert(adder.add(2, 3) === 5)
   }
 
 }
