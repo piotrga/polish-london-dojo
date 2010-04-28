@@ -1,0 +1,4 @@
+// http://www.gradle.org/0.9-preview-1/docs/userguide/userguide.html
+// http://www.gradle.org/scala_plugin.html
+
+apply plugin: 'scala'

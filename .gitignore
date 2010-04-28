@@ -1,0 +1,5 @@
+projects/*/.gradle/
+projects/*/.idea/
+projects/*/out/
+projects/*/build/
+projects/Scala/lib
