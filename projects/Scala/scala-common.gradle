@@ -1,0 +1,31 @@
+apply plugin: 'scala'
+
+dependencies{
+  // Libraries needed to run the scala tools
+  scalaTools 'org.scala-lang:scala-compiler:2.7.6'
+  scalaTools 'org.scala-lang:scala-library:2.7.6'
+
+  // Libraries needed for scala api
+  compile 'org.scala-lang:scala-library:2.7.6'
+}
+
+repositories{
+  mavenCentral()
+}
+
+task refreshDependencies <<{
+  mkdir "build/dependencies"
+  configurations.each{
+    config = it
+    mkdir "build/dependencies/${config.name}"
+    copy {
+      from config
+      into "build/dependencies/${config.name}"
+    }
+  }
+}
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '0.9-preview-1'
+  jarPath = 'gradle'
+}

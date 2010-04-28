@@ -1,0 +1,8 @@
+To run tests:
+gradlew test
+
+To download dependencies for IDE to work:
+gradle refreshDependencies
+
+To configure your IDE dependencies:
+Add directories under build/dependencies to build path.
