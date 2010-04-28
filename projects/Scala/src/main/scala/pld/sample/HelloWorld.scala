@@ -14,7 +14,9 @@ object HelloWorld {
       override def paint(g: Graphics) = {
         g.setColor(Color.BLUE)
         g.drawRoundRect(10, 10, 180, 180, 50, 50)
+        
       }
+
     }
     frame.getContentPane().add(panel)
     frame.setVisible(true)
