@@ -16,7 +16,7 @@
 	
 	for (int y=1; y<=model.height; y++) {
 		for (int x=1; x<=model.width; x++) {
-			if ([model isAliveAtX:x y:y]) {
+			if ([model isCellAliveAtX:x y:y]) {
 				CGContextMoveToPoint(context, x*2, y*2);
 				CGContextAddLineToPoint(context, (x+1)*2, y*2);
 				CGContextStrokePath(context);				

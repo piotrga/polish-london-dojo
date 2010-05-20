@@ -1,11 +1,3 @@
-//
-//  BoardMutableModel.m
-//  GameOfLife
-//
-//  Created by Piotr Gabryanczyk on 20/05/2010.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "GameOfLife.h"
 #import <UIKit/UIKit.h>
 
@@ -18,14 +10,27 @@
 	return self;
 }
 
--(BOOL)isAliveAtX:(int)x y:(int)y{
+-(BOOL)isCellAliveAtX:(int)x y:(int)y{
 	int address = y*width+x;
 	if (address > width * height) @throw @"Invalid address";
 	if (address > [cells count]) return FALSE;
-	return [cells objectAtIndex:address];
+	return [cells objectAtIndex:address] == @"TRUE";
 }
 
 @synthesize height;
 @synthesize width;
+
+-(void) swapBoardData:(NSMutableArray*) data{
+	[cells release];
+	cells = data;
+}
+
++(NSMutableArray*) emptyModelDataForWidth:(int)w height:(int)h{
+	NSMutableArray *data = [[NSMutableArray alloc] initWithCapacity:w*h];
+	for (int i = 0; i<w*h; i++) {
+		[data addObject:@"FALSE"];
+	}
+	return data;
+}
 
 @end

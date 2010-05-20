@@ -5,7 +5,7 @@
 @end
 
 @protocol BoardModel
-	-(BOOL)isAliveAtX:(int)x y:(int)y;
+	-(BOOL)isCellAliveAtX:(int)x y:(int)y;
 
 	@property (readonly) int width;
 	@property (readonly) int height;
@@ -18,4 +18,6 @@
 } 
 
 	-(id) initWithWidth:(int)newWidth height:(int)newHeight;
+	-(void) swapBoardData:(NSMutableArray*) data;
+	+(NSMutableArray*) emptyModelDataForWidth:(int)w height:(int)h;
 @end

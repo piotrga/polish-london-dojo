@@ -23,6 +23,7 @@
 		A2BDFD6D11A58945000E7C37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		A2BDFD6E11A5895A000E7C37 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		A2EAE8B111A56EDF00457F8A /* BoardMutableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EAE8B011A56EDF00457F8A /* BoardMutableModel.m */; };
+		A2EEEC9811A5933500A7DD88 /* README in Resources */ = {isa = PBXBuildFile; fileRef = A2EEEC9711A5933500A7DD88 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,11 +40,11 @@
 		A259088E11A47B8200FEBFB2 /* GameOfLifeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOfLifeView.h; sourceTree = "<group>"; };
 		A259088F11A47B8200FEBFB2 /* GameOfLifeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeView.m; sourceTree = "<group>"; };
 		A25908A111A47E0900FEBFB2 /* GameOfLife.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOfLife.h; sourceTree = "<group>"; };
-		A2BDFC6A11A58762000E7C37 /* ModelTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelTest.h; sourceTree = "<group>"; };
 		A2BDFCB311A5891F000E7C37 /* Testing.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Testing.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2BDFCB411A5891F000E7C37 /* Testing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Testing-Info.plist"; sourceTree = "<group>"; };
 		A2EAE86C11A56B5500457F8A /* ModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTest.m; sourceTree = "<group>"; };
 		A2EAE8B011A56EDF00457F8A /* BoardMutableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardMutableModel.m; sourceTree = "<group>"; };
+		A2EEEC9711A5933500A7DD88 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				A2EAE86C11A56B5500457F8A /* ModelTest.m */,
-				A2BDFC6A11A58762000E7C37 /* ModelTest.h */,
+				A2EEEC9711A5933500A7DD88 /* README */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -237,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2BDFD6E11A5895A000E7C37 /* MainWindow.xib in Resources */,
+				A2EEEC9811A5933500A7DD88 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

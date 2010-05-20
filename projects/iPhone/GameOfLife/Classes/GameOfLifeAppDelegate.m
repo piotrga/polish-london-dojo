@@ -18,22 +18,19 @@
 	return YES;
 }
 
-
 - (void)dealloc {
     [window release];
     [super dealloc];
 }
-
-
 @end
 
 
 @implementation BoardRandomModel
 
--(int)height{ return 20;}
+-(int)height{ return 200;}
 -(int)width{ return 150;}
 
--(BOOL)isAliveAtX:(int)x y:(int)y{
+-(BOOL)isCellAliveAtX:(int)x y:(int)y{
 	return random() %4 == 1;
 }
 
