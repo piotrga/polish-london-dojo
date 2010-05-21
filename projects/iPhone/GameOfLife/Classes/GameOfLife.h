@@ -15,9 +15,11 @@
 	NSMutableArray *cells;
 	int width;
 	int height;
+	id<BoardModelListener> listener;
 } 
 
 	-(id) initWithWidth:(int)newWidth height:(int)newHeight;
 	-(void) swapBoardData:(NSMutableArray*) data;
 	+(NSMutableArray*) emptyModelDataForWidth:(int)w height:(int)h;
+	@property (retain)id<BoardModelListener> listener;
 @end

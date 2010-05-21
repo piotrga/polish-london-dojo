@@ -18,11 +18,10 @@
 }
 
 - (void) testSwappingDataWorks{
-	STAssertTrue( @"TEST" == @"TEST", @"");
-	NSMutableArray *data = [BoardMutableModel emptyModelDataForWidth:2 height:2];
+	NSMutableArray *data = [BoardMutableModel emptyModelDataForWidth:10 height:10];
 	[data replaceObjectAtIndex:1 withObject:@"TRUE"];
 	[model swapBoardData: data];
-	STAssertTrue([model isCellAliveAtX:1 y:0],@"");
+	STAssertTrue([model isCellAliveAtX:1 y:0], @"");
 }
 
 - (void) tearDown{
